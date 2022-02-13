@@ -15,13 +15,14 @@ function App() {
         <div>
           {
             login ?
-              <button onClick={() => setLogin(false)}> Log Out</button>
+              <button onClick={() => setLogin(false)} className= "Button1"> Log Out</button>
               :
               <button onClick={() => setLogin(true)}>Login</button>
           }
         </div>
+      
       </header>
-      {login && < Container /> && <Header />}
+      {login && < Container /> }
     </div>
   );
 }
