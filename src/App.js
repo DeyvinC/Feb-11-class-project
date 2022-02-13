@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Container from './Component';
+import Header from './Logo';
 
 function App() {
   const [login, setLogin] = useState(false)
@@ -10,25 +11,17 @@ function App() {
         <h1>{
           login ? 'Welcome Back' : 'Please Login'
         }
-        </h1> 
+        </h1>
         <div>
-        {login
-          ?
-          <>
-       <button onClick={ () => setLogin(false) }>
-         Log Out
-       </button>
-       </>
-        :
-      
-
-       <button onClick={ () => setLogin(true)}>
-         Login
-       </button> 
-        }
-       </div>
+          {
+            login ?
+              <button onClick={() => setLogin(false)}> Log Out</button>
+              :
+              <button onClick={() => setLogin(true)}>Login</button>
+          }
+        </div>
       </header>
-      {login && < Container />}
+      {login && < Container /> && <Header />}
     </div>
   );
 }
