@@ -24,10 +24,11 @@
 }
 
 .Image {
-  border: 1px solid #ddd;
+  width: 200;
+  height: auto;
+  border: 1px solid red;
   border-radius: 4px;
   padding: 5px;
-  width: 150px;
 }
 
 .Button1 {
@@ -38,4 +39,13 @@
   box-shadow: 1px 1px 20px 0px;
   border-radius: 20px;
   
+}
+
+.Button2 {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 75px;
+  box-shadow: 2px 2px 20px 0px;
+  border-radius: 20px;
 }

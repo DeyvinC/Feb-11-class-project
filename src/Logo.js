@@ -1,9 +1,8 @@
-import logo from "./image.JPG"
+import logo from "./Car.jpg"
 
 function Header() {
-    <section className="Image">
-    return <img src={logo} alt="Logo" />;
-    </section>
+    return <img src={logo} style={{alignContent: "flex-start"}} width={150} alt="Logo" />;
+  
   }
   
   export default Header;
